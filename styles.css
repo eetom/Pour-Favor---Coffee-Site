@@ -7,19 +7,6 @@ body {
   margin: 0;
 }
 
-.centerpiece {
-  text-align: center;
-  max-width: 70%;
-  height: auto;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-
-.centerpiece p {
-  margin:0 auto;
-}
-
 .medium-paragraph {
   max-width: 55%;
 }
@@ -129,10 +116,12 @@ h3.title {
 
 p {
   font-size: 18px;
+  line-height: 1.3;
 }
 
 p.object-title {
   font-weight: 700;
+  font-size: 21px;
   color: #2D1804;
 }
 
@@ -150,19 +139,16 @@ hr.half {
 }
 
 @media only screen and (max-width: 767px) {
-  .centerpiece {
-    text-align: center;
-    max-width: 90%;
-    height: auto;
-    position: relative;
-    display: block;
-    margin:0 auto;
-  }
   .main-body-content {
     max-width: 90%;
+    margin: 10px auto;
   }
   .three-body-content {
     width: 45%;
+    margin: 0 5% 0 0;
+  }
+  .video {
+    width: 40%;
     margin: 0 5% 0 0;
   }
   .centerpiece p, .medium-paragraph {
@@ -174,19 +160,18 @@ hr.half {
 }
 
 @media only screen and (max-width: 600px) {
-  .centerpiece {
-    text-align: center;
-    max-width: 90%;
-    height: auto;
-    position: relative;
-    display: block;
-    margin:0 auto;
-  }
   .centerpiece p, .medium-paragraph {
     max-width: 100%;
+    margin: 10px auto;
   }
   .three-body-content {
     width: 100%;
+  }
+  .video {
+    width: 100%;
+  }
+  .video:first-of-type {
+    margin-bottom: 25px;
   }
 }
 
