@@ -21,26 +21,6 @@ body {
   padding: 10px;
 }
 
-.flex-body-content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.three-body-content {
-  width: 30%;
-  margin: 0 3% 2% 0
-}
-
-.three-body-content h3 {
-  margin-top: 5px;
-}
-
-.video {
-  width: 33%;
-  display: inline-block;
-  text-align: left;
-}
-
 .title {
 	margin-bottom: 0px;
   color: #EB1B5E;
@@ -69,6 +49,11 @@ body {
 
 .cell img {
   display: block;
+}
+
+.boxed {
+  border: 1px solid #cccccc;
+  padding: 10px;
 }
 
 header {
@@ -142,6 +127,10 @@ p.object-title {
   color: #2D1804;
 }
 
+.boxed .object-title {
+  margin-top: 0.5rem;
+}
+
 hr.half {
   margin: 30px 0 30px 0;
   opacity: 1;
@@ -154,11 +143,20 @@ hr.half {
     max-width: 90%;
     margin: 10px auto;
   }
+  .medium-paragraph {
+    max-width: 100%;
+  }
   h1 {
 		font-size: 2.4em;
 	}
+  .video {
+    margin-bottom: 30px;
+  }
+  .boxed {
+    width: 95%;
+    margin-top: -1px;
+  } 
 }
-
 
 @media screen and (min-width: 600px) {
   .grid {
@@ -169,11 +167,23 @@ hr.half {
   .cell {
     width: calc(50% - 2rem);
   }
+  .boxed {
+    width: calc(45%);
+    margin-right: 0;
+    margin-left: -1px;
+    margin-top: -1px;
+  } 
 }
 
 @media screen and (min-width: 1000px) {
   .cell {
     width: calc(33.3333% - 2rem);
   }
+  .boxed {
+    width: calc(30%);
+    margin-right: 0;
+    margin-left: -1px;
+    margin-top: -1px;
+  } 
 }
 
